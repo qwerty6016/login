@@ -3,48 +3,19 @@
 <head>
 	<meta charset="UTF-8">
     <title>Website</title>
-	<style>
-		#login-div {
-			float : left;
-		}
-		
-		#registration-div {
-			float : right;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
 	<script src="/socket.io/socket.io.js"></script>
 	<script>
 		'use strict';
 		const socket = io();
 	</script>
-	<script src="/authentication/validation.js"></script>
+	<script src="/authentication/validator.min.js"></script>
 	<script src="/authentication/login.js"></script>
 	<script src="/authentication/registration.js"></script>
 	<script src="/user_profile.js"></script>
 </head>
 <body>
-	<div id="login-div">
-		email<input id="login-email" type="email">
-		<br>
-		<br>
-		password<input id="login-password" type="password">
-		<br>
-		<br>
-		<button id="login-submit-btn" onclick="login()">login</button>
-		<p id="login-error"></p>
-	</div>
-	<div id="registration-div">
-		name <input id="registration-name" type="text">
-		<br>
-		<br>
-		email <input id="registration-email" type="email">
-		<br>
-		<br>
-		password <input id="registration-password" type="password">
-		<br>
-		<br>
-		<button id="registration-submit-btn" onclick="registration()">register user</button>
-		<p id="registration-error"></p>
-	</div>
+	
 </body>
+<script src="/index.js"></script>
 </html>

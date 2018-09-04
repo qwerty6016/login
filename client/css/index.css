@@ -1,0 +1,40 @@
+body {
+	background-color : #f2f2f2;
+}
+	
+#login-div, #user-profile-div {
+	float : left;
+}
+
+#registration-div {
+	float : right;
+}
+
+#login-div, #user-profile-div, #registration-div {
+	padding : 25px;
+	margin : 25px;
+	border : 1px solid black;
+	background-color : white;
+	border-radius: 5px;
+	text-align : center;
+}
+		
+input {
+	margin : 10px;
+	border-radius: 3px;
+}
+		
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+}
+		
+#login-error, #registration-error {
+	color: red;
+}
